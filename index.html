@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="timerPageField">
+
+        <div class="naslovField">
+            <h1> Focus Timer </h1>
+        </div>
+        <div class="aboutTimerField">
+            <button class="focus" id="focusBtn">   Focus   </button>
+            <button class="small-Break" id="smallBreakBtn"> Small Break</button>
+            <button class="long-Break" id="longBreakBtn">  Long Break  </button>
+        </div>
+        <main class="timeField">
+            <div class="clockTimer">
+                <span class="hours">24 :</span>
+                <span class="minuts">60 :</span>
+                <span class="seconds">60</span>
+            </div>
+            <h3> Paused</h3>
+            
+        </main>
+        <div class="clockType">
+            <button>24 Hour</button>
+            <button>12 Hour</button>
+        </div>
+
+        <div class="settings">
+            <i class="fa fa-cog"></i>
+        </div>
+    </div>
+    <aside class="modal-settings">
+        <div class="naslovModalField">
+            <div></div>
+            <h3>Settings</h3>
+            <i class="fa fa-times"></i>
+        </div>
+
+        <div class="configTime">
+            <span class="focusConfig" >
+                <h3>Focus Time Settings</h3>
+                <input class="inputSetings" id="forcusTimeSetting" type="number" placeholder="minutes">
+            </span>
+            <span class="smallBreakConfig">
+                <h3>Small Break Time Settings</h3>
+                <input class="inputSetings" id="smallBreakSetting" type="number" placeholder="minutes">
+            </span>
+            <span class="longBreakConfig ">
+                <h3>Long Break Time Settings</h3>
+                <input class="inputSetings" id="longBreakSetting" type="number" placeholder="minutes">
+            </span>
+        </div>
+
+        <div class="fontConfig">
+            <h3> FONT </h3>
+            <div class="btnSectionFont">
+                <button class="bigBtnSize">Aa</button>
+                <button class="mediumBtnSize">Aa</button>
+                <button class="smallBtnSize">Aa</button>
+            </div>
+            
+        </div>
+        <div class="colorConfig">
+            <h3> Theme </h3>
+            <div class="btnSectionColor">
+                <button class="color blueOrange"></button>
+                <button class="color blackWhite"></button>
+                <button class="color redGray"></button>
+                <button class="color greenYellow"></button>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

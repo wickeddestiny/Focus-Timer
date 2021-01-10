@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Teko:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  max-width: 100%;
+  height: 90vh;
+  margin: 0 1rem;
+  background-color: #42378f;
+  position: relative;
+}
+.timerPageField {
+  z-index: 0;
+}
+.naslovField {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "poppins";
+  margin-top: 2rem;
+}
+.naslovField h1 {
+  color: #4f4f4f;
+  font-size: 2.5rem;
+  text-shadow: white 0.3px 0.4px;
+}
+.aboutTimerField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20%;
+  padding: 0.3rem;
+}
+.aboutTimerField button {
+  padding: 3%;
+  width: 33%;
+  height: 100%;
+  margin-left: 0.5%;
+  background-color: rgb(245, 56, 68);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20%;
+  outline: none;
+  cursor: pointer;
+}
+.timeField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgb(118, 99, 248) 20%,
+    rgba(245, 56, 68, 1) 80%
+  );
+}
+.clockTimer {
+  font-size: 2.6rem;
+  font-family: "poppins";
+  padding: 2rem;
+  font-weight: 500;
+}
+.timeField h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "poppins";
+}
+.clockType {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10% auto;
+  width: 100%;
+}
+.clockType button {
+  padding: 2%;
+  font-size: 1.6rem;
+  background-color: rgba(245, 56, 68, 1);
+  color: white;
+  font-weight: 600;
+  font-family: "teko";
+  border: none;
+  border-radius: 20%;
+  box-shadow: inset rgb(119, 31, 37) -3px -3px;
+  outline: none;
+}
+.clockType button:hover {
+  transition: 1s;
+}
+.clockType button:focus {
+  box-shadow: inset rgb(245, 56, 68) 3px 3px;
+}
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.settings i {
+  font-size: 4rem;
+  cursor: pointer;
+}
+.settings i:hover {
+  animation: settings 3s infinite;
+}
+@keyframes settings {
+  100% {
+    transform: rotate(360deg);
+  }
+  0% {
+    transform: rotate (0deg);
+  }
+}
+
+/*          MODAL           */
+
+.modal-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  z-index: 90;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.849);
+  position: absolute;
+  top: 10rem;
+  left: 0rem;
+  transition: 1s ease-in;
+  font-family: "teko";
+}
+
+.naslovModalField {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 1.8rem;
+  color: rgb(54, 25, 248);
+  margin-top: 2rem;
+}
+.configTime {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+}
+.configTime h3 {
+  color: #42378f;
+}
+.configTime input {
+  width: 30%;
+  height: 3rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.configTime input::placeholder {
+  text-align: center;
+  font-family: "teko";
+}
+.smallBreakConfig h3 {
+  color: rgb(9, 255, 0);
+}
+.longBreakConfig h3 {
+  color: red;
+}
+.fontConfig,
+.colorConfig {
+  width: 100%;
+  height: 20%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.fontConfig h3,
+.colorConfig h3 {
+  font-family: "teko";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.btnSectionFont,
+.btnSectionColor {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 20%;
+}
+.fontConfig button {
+  width: 10%;
+  font-family: "poppins";
+  height: 50%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.bigBtnSize {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.mediumBtnSize {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.smallBtnSize {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.btnSectionColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  content: "";
+  outline: none;
+  margin: 1%;
+}
+.blueOrange {
+  background: linear-gradient(to top left, #0091ff 50%, #ff7b00 50%);
+}
+.blackWhite {
+  background: linear-gradient(to top left, #ffffff 50%, #000000 50%);
+}
+.redGray {
+  background-image: linear-gradient(315deg, #d4d4d4 50%, #ee5253 50%);
+}
+.greenYellow {
+  background: linear-gradient(to top left, #cfeb00 50%, #8aff9d 50%);
+}
+.colorConfig {
+  margin-top: 1rem !important;
+}
