@@ -67,6 +67,8 @@ body {
     rgb(118, 99, 248) 20%,
     rgba(245, 56, 68, 1) 80%
   );
+  border: black 2px dotted;
+  box-shadow: 0 0 5px 5px rgb(106, 84, 253), 0 0 5px 5px rgb(161, 148, 247);
 }
 .clockTimer {
   font-size: 2.6rem;
@@ -95,8 +97,10 @@ body {
   font-family: "teko";
   border: none;
   border-radius: 20%;
-  box-shadow: inset rgb(119, 31, 37) -3px -3px;
+
   outline: none;
+  box-shadow: inset 5px 5px 10px rgb(119, 31, 37),
+    inset -5px -5px 10px rgb(119, 31, 37);
 }
 .clockType button:hover {
   transition: 1s;
@@ -129,7 +133,7 @@ body {
 /*          MODAL           */
 
 .modal-settings {
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -138,7 +142,7 @@ body {
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.849);
   position: absolute;
-  top: 10rem;
+  top: 5rem;
   left: 0rem;
   transition: 1s ease-in;
   font-family: "teko";
@@ -155,16 +159,17 @@ body {
 }
 .configTime {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .configTime h3 {
-  color: #42378f;
+  color: #776dbe;
 }
 .configTime input {
-  width: 30%;
+  width: 60%;
   height: 3rem;
   font-size: 1.4rem;
   text-align: center;
@@ -188,13 +193,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 1rem;
+}
+.colorConfig {
+  margin-top: 1rem !important;
 }
 .fontConfig h3,
 .colorConfig h3 {
   font-family: "teko";
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 .btnSectionFont,
 .btnSectionColor {
@@ -202,11 +209,12 @@ body {
   justify-content: space-evenly;
   width: 100%;
   margin: 0 20%;
+  height: 40%;
 }
 .fontConfig button {
   width: 10%;
   font-family: "poppins";
-  height: 50%;
+  height: 10%;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -230,11 +238,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: 50%;
 }
 
 .color {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   content: "";
   outline: none;
@@ -251,7 +260,4 @@ body {
 }
 .greenYellow {
   background: linear-gradient(to top left, #cfeb00 50%, #8aff9d 50%);
-}
-.colorConfig {
-  margin-top: 1rem !important;
 }

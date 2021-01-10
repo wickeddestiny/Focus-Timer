@@ -1,0 +1,10 @@
+$("#configBtn").click(function(){
+    if($("#configBtn")){
+        $(".modal-settings").css("display","flex")
+    }
+});
+$("#closeBtn").click(function(){
+    if($("#configBtn")){
+        $(".modal-settings").css("display","none")
+    }
+});
