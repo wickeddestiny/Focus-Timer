@@ -27,40 +27,43 @@ body {
   margin-top: 2rem;
 }
 .naslovField h1 {
-  color: #4f4f4f;
+  color: #ff7474;
   font-size: 2.5rem;
   text-shadow: white 0.3px 0.4px;
 }
 .aboutTimerField {
+  width: 100%;
+  max-width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 3rem auto;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  border-radius: 20%;
-  padding: 0.3rem;
 }
 .aboutTimerField button {
-  padding: 3%;
-  width: 33%;
-  height: 100%;
-  margin-left: 0.5%;
-  background-color: rgb(245, 56, 68);
-  color: rgb(255, 255, 255);
+  width: 5rem;
+  height: 2.8rem;
+  padding: 1rem;
+  margin: auto 1rem;
   border: none;
   border-radius: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   outline: none;
   cursor: pointer;
+  background-color: rgb(255, 100, 110);
+  color: rgb(0, 0, 0);
+  font-family: "poppins";
+  font-size: 1rem;
 }
 .timeField {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 300px;
+  height: 300px;
   margin: auto;
-  width: 290px;
-  height: 290px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
@@ -89,36 +92,36 @@ body {
   width: 100%;
 }
 .clockType button {
-  padding: 2%;
-  font-size: 1.6rem;
+  padding: 3%;
+  font-size: 1.8rem;
   background-color: rgba(245, 56, 68, 1);
   color: white;
+  text-shadow: #000000 1.4px 1.4px;
   font-weight: 600;
   font-family: "teko";
   border: none;
   border-radius: 20%;
-
+  cursor: pointer;
   outline: none;
   box-shadow: inset 5px 5px 10px rgb(119, 31, 37),
     inset -5px -5px 10px rgb(119, 31, 37);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clockType button:hover {
   transition: 1s;
 }
 .clockType button:focus {
   box-shadow: inset rgb(245, 56, 68) 3px 3px;
+  text-shadow: #000000 0px 0px;
 }
-.settings {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-}
-.settings i {
+#configBtn {
   font-size: 4rem;
   cursor: pointer;
 }
-.settings i:hover {
+#configBtn:hover {
   animation: settings 3s infinite;
 }
 @keyframes settings {
@@ -142,7 +145,7 @@ body {
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.849);
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   left: 0rem;
   transition: 1s ease-in;
   font-family: "teko";
@@ -153,9 +156,21 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: rgb(54, 25, 248);
-  margin-top: 2rem;
+  margin-top: 1.2rem;
+}
+.closeSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 3rem;
+  color: rgb(54, 25, 248);
+  margin-top: 1.4rem;
+}
+#closeBtn {
+  cursor: pointer;
 }
 .configTime {
   display: flex;
@@ -163,13 +178,13 @@ body {
   justify-content: center;
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .configTime h3 {
   color: #776dbe;
 }
 .configTime input {
-  width: 60%;
+  width: 70%;
   height: 3rem;
   font-size: 1.4rem;
   text-align: center;
@@ -179,7 +194,7 @@ body {
   font-family: "teko";
 }
 .smallBreakConfig h3 {
-  color: rgb(9, 255, 0);
+  color: rgb(7, 197, 0);
 }
 .longBreakConfig h3 {
   color: red;
@@ -187,35 +202,35 @@ body {
 .fontConfig,
 .colorConfig {
   width: 100%;
-  height: 20%;
+  height: 15%;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .colorConfig {
-  margin-top: 1rem !important;
+  margin-top: 0.5rem !important;
 }
 .fontConfig h3,
 .colorConfig h3 {
   font-family: "teko";
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .btnSectionFont,
 .btnSectionColor {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0 20%;
+  margin: 0 15%;
   height: 40%;
 }
 .fontConfig button {
   width: 10%;
   font-family: "poppins";
   height: 10%;
-  padding: 2rem;
+  padding: 1.6rem;
   display: flex;
   justify-content: center;
   text-align: center;
