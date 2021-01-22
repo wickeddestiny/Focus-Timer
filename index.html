@@ -19,15 +19,20 @@
             <h1> Focus Timer </h1>
         </div>
         <div class="aboutTimerField">
-            <button class="focus" id="focusBtn">   Focus Time  </button>
-            <button class="small-Break" id="smallBreakBtn"> Small Break</button>
-            <button class="long-Break" id="longBreakBtn">  Long Break  </button>
+            <button class="focus typeFocus" id="focusBtn">   Focus Time  </button>
+            <button class="small-Break typeFocus" id="smallBreakBtn"> Small Break</button>
+            <button class="long-Break typeFocus" id="longBreakBtn">  Long Break  </button>
         </div>
         <main class="timeField">
             <div class="clockTimer">
-                <p id="clock">10 : 00</p>
+                <!-- <p id="clock">10 : 00</p> -->
+                <div class="fcsMin" id="focusMinutes">0</div>
+                <span>:</span>
+                <div class="fcsSec" id="focusSeconds">50</div>
+                
             </div>
-            <h3> Paused</h3>
+
+            <h3 id="focusStance"> Paused</h3>
             
         </main>
         <div class="clockType">
@@ -56,18 +61,18 @@
         <div class="configTime">
             <span class="focusConfig" >
                 <h3>Focus Time Settings</h3>
-                <input class="inputSetings" id="forcusTimeMinutes" value="0" maxlength="2" type="number" placeholder="Minutes">
-                <input class="inputSetings" id="forcusTimeSeconds" value="0" maxlength="2" type="number" placeholder="Seconds">
+                <input class="inputSetings" id="focusSettingMinutes" value="20" maxlength="2" type="number" placeholder="Minutes">
+                <input class="inputSetings" id="focusSettingSeconds" value="00" maxlength="2" type="number" placeholder="Seconds">
             </span>
             <span class="smallBreakConfig">
                 <h3>Small Break Time Settings</h3>
-                <input class="inputSetings" id="smallBreakMinutes" value="5" maxlength="2" type="number" placeholder="Minutes">
-                <input class="inputSetings" id="smallBreakSeconds" value="0" maxlength="2" type="number" placeholder="Seconds">
+                <input class="inputSetings" id="smallSettingMinutes" value="05" maxlength="2" type="number" placeholder="Minutes">
+                <input class="inputSetings" id="smallSettingSeconds" value="00" maxlength="2" type="number" placeholder="Seconds">
             </span>
             <span class="longBreakConfig ">
                 <h3>Long Break Time Settings</h3>
-                <input class="inputSetings" id="longBreakMinutes" value="0" maxlength="2" type="number" placeholder="Minutes">
-                <input class="inputSetings" id="longBreakSeconds" value="0" maxlength="2" type="number" placeholder="Seconds">
+                <input class="inputSetings" id="longSettingMinutes" value="15" maxlength="2" type="number" placeholder="Minutes">
+                <input class="inputSetings" id="longSettingSeconds" value="00" maxlength="2" type="number" placeholder="Seconds">
             </span>
         </div>
 

@@ -51,11 +51,14 @@ body {
   align-items: center;
   outline: none;
   cursor: pointer;
-  background-color: rgb(255, 100, 110);
+
+  background-color: rgb(255, 180, 185);
   color: rgb(0, 0, 0);
+
   font-family: "poppins";
   font-size: 1rem;
 }
+
 .timeField {
   display: flex;
   justify-content: center;
@@ -78,6 +81,11 @@ body {
   font-family: "poppins";
   padding: 2rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 60%;
 }
 .timeField h3 {
   font-size: 2rem;
