@@ -27,7 +27,7 @@ body {
   margin-top: 2rem;
 }
 .naslovField h1 {
-  color: #ff7474;
+  color: #01ced1;
   font-size: 2.5rem;
   text-shadow: white 0.3px 0.4px;
 }
@@ -44,15 +44,14 @@ body {
   height: 2.8rem;
   padding: 1rem;
   margin: auto 1rem;
-  border: none;
+  border: 1px black solid;
   border-radius: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   outline: none;
   cursor: pointer;
-
-  background-color: rgb(255, 180, 185);
+  background-color: #01ced1;
   color: rgb(0, 0, 0);
 
   font-family: "poppins";
@@ -68,11 +67,7 @@ body {
   height: 300px;
   margin: auto;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgb(118, 99, 248) 20%,
-    rgba(245, 56, 68, 1) 80%
-  );
+  background: radial-gradient(circle, rgb(118, 99, 248) 20%, #01ced1 80%);
   border: black 2px dotted;
   box-shadow: 0 0 5px 5px rgb(106, 84, 253), 0 0 5px 5px rgb(161, 148, 247);
 }
@@ -102,7 +97,7 @@ body {
 .clockType button {
   padding: 3%;
   font-size: 1.8rem;
-  background-color: rgba(245, 56, 68, 1);
+  background-color: #01ced1;
   color: white;
   text-shadow: #000000 1.4px 1.4px;
   font-weight: 600;
@@ -111,8 +106,7 @@ body {
   border-radius: 20%;
   cursor: pointer;
   outline: none;
-  box-shadow: inset 5px 5px 10px rgb(119, 31, 37),
-    inset -5px -5px 10px rgb(119, 31, 37);
+  box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #000000;
   width: 20%;
   display: flex;
   justify-content: center;
@@ -122,12 +116,13 @@ body {
   transition: 1s;
 }
 .clockType button:focus {
-  box-shadow: inset rgb(245, 56, 68) 3px 3px;
+  box-shadow: inset #000000 3px 3px;
   text-shadow: #000000 0px 0px;
 }
 #configBtn {
   font-size: 4rem;
   cursor: pointer;
+  color: #01ced1;
 }
 #configBtn:hover {
   animation: settings 3s infinite;
@@ -190,12 +185,15 @@ body {
 }
 .configTime h3 {
   color: #776dbe;
+  display: block;
+  height: 40%;
 }
 .configTime input {
-  width: 70%;
+  width: 80%;
   height: 3rem;
   font-size: 1.4rem;
   text-align: center;
+  margin-top: 1rem;
 }
 .configTime input::placeholder {
   text-align: center;
@@ -225,6 +223,7 @@ body {
 .colorConfig h3 {
   font-family: "teko";
   font-size: 1.6rem;
+  margin-top: 1rem;
 }
 .btnSectionFont,
 .btnSectionColor {
@@ -272,8 +271,8 @@ body {
   outline: none;
   margin: 1%;
 }
-.blueOrange {
-  background: linear-gradient(to top left, #0091ff 50%, #ff7b00 50%);
+.purpleBlue {
+  background: linear-gradient(to top left, #7663f8 50%, #01ced1 50%);
 }
 .blackWhite {
   background: linear-gradient(to top left, #ffffff 50%, #000000 50%);
